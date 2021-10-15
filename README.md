@@ -11,6 +11,7 @@
 - React
 - Redux
 - CSS
+- JavaScript
 
 # Mobile View 
 ![Screen Shot 2021-10-15 at 2 50 06 PM](https://user-images.githubusercontent.com/82400552/137546201-f406720e-ace2-4bc1-a590-dea30330e7fb.png)
