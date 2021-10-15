@@ -5,6 +5,7 @@
 - Express
 - Bcrypt
 - MongoDB
+- GCP App Engine
 
 ### Client Tech
 - React
