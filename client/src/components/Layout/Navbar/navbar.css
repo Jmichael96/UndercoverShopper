@@ -1,0 +1,175 @@
+/* navbar itself */
+
+.navbarStyles_nav {
+    height: 3.5rem;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* navbar link wrapper for desktop users */
+
+#navbarStyles_desktopLinkWrap {
+    display: flex;
+    align-items: center;
+}
+
+/* icon links */
+
+.navbarStyles_socialIcon {
+    font-size: 1.7rem;
+    margin: .8rem .3rem 0 .3rem;
+    cursor: pointer;
+}
+
+/* nav link buttons */
+
+.nav-link {
+    color: transparent;
+    margin: 0 .5rem;
+}
+
+/* nav link wrapper */
+
+.navLinkWrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: .5rem;
+    margin-left: auto;
+}
+
+/* style of text buttons for navigation links */
+
+.navSpan {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: none;
+    letter-spacing: .05rem;
+    display: inline-block;
+    padding: .3rem 0;
+    position: relative;
+}
+
+.navSpan:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #00D8FF;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navSpan:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* dropdown */
+
+.navStyles_dropdownWrapper {
+    padding: 0 .3rem;
+}
+
+.navStyles_dropdownWrapper ul {
+    font-size: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navStyles_dropdownWrapper ul li {
+    display: inline-block;
+    position: relative;
+}
+
+/* used to hide the dropdown contents before hovering */
+
+.navStyles_dropdownWrapper ul li ul {
+    display: none;
+    padding: 0;
+    z-index: 99;
+}
+
+/* background of the dropdown button area */
+
+.navStyles_dropdownWrapper ul li:hover {
+    cursor: pointer;
+}
+
+/* the hidden dropdown part */
+
+.navStyles_dropdownWrapper ul li:hover ul {
+    display: block;
+    width: 200px;
+    left: 0;
+    position: absolute;
+}
+
+/* background of the dropdown items */
+
+.navStyles_dropdownWrapper ul li:hover ul li {
+    display: block;
+    background-color: #e7e7e7;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 15px;
+}
+
+/* hovering over each of the items inside the dropdown */
+
+.navStyles_dropdownWrapper ul li:hover ul li:hover {
+    background-color: #e0e0e0;
+}
+
+/* media query for the mobile sized nav */
+
+@media (max-width:600px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav>.nav-btn>label:hover, .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}

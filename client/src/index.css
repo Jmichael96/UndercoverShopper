@@ -1,0 +1,51 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(152,201,201);
+  background: linear-gradient(0deg, rgba(152,201,201,1) 0%, rgba(166,207,206,1) 28%, rgba(226,226,226,1) 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  letter-spacing: 1px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.large-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .2);
+}
+
+.small-shadow {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.large-rad {
+  border-radius: 6px;
+}
+
+.small-rad {
+  border-radius: 3px;
+}

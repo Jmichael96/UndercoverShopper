@@ -1,0 +1,12 @@
+runtime: nodejs14
+
+handlers:
+  - url: /api/.*
+    script: auto
+  - url: /
+    static_files: build/index.html
+    upload: build/index.html
+  - url: /
+    static_dir: build
+    http_headers:
+      Access-Control-Allow-Origin: https://api-dot-undercovershopper.uc.r.appspot.com
