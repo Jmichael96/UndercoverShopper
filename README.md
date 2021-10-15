@@ -1,5 +1,5 @@
 # UndercoverShopper
-[https://undercovershopper.com](https://undercovershopper.uc.r.appspot.com/home#!)
+[https://undercovershopper.com](https://undercovershopper.uc.r.appspot.com/)
 
 ### Server Tech
 - Express
