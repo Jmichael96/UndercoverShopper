@@ -3,7 +3,7 @@ export default {
     main: '#00D2CF',
     secondary: '#FF67DC',
     BasicSpinner: '#500192',
-    PageSpinner: '#47ff2f',
+    PageSpinner: '#FF67DC',
     alertBg: '#00D2CF',
     alertText: 'black',
     btnBg: '#FF67DC',
